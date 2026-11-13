@@ -63,7 +63,7 @@
                 <a href="{{ route('shop.index') }}">← Lanjut Belanja</a>
                 <div>
                     <strong>Total: Rp{{ number_format($grandTotal, 2, ',', '.') }}</strong>
-                    <a href="#" class="btn" style="margin-left: 12px;">Lanjut ke Checkout</a>
+                    <a href="{{ route('checkout.index') }}" class="btn" style="margin-left: 12px;">Lanjut ke Checkout</a>
                 </div>
             </div>
         @endif

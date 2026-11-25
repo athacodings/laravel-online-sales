@@ -10,8 +10,7 @@ RUN composer install \
 
 FROM node:20-alpine AS assets
 WORKDIR /app
-COPY package*.json vite.config.js ./
-COPY resources ./resources
+COPY . .
 RUN npm install && npm run build
 
 FROM dunglas/frankenphp:1-php8.4-bookworm
